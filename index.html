@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo da aba de navegação -->
+    <title>G&TO - Uma nova Casa de Moda ESG com roupas no estilo Natural Esportivo</title>
+    <!-- Colocando imagem na aba do navegador -->
+    <link rel="icon" href="./img/Logo.png">
+    <!-- Colocando descrição no Site -->
+    <meta name="description" content="Uma Casa de Moda comprometida com o movimento ESG, focada em roupas do Estilo Natural Esportivo pra quem busca por roupas confortaveis e despojadas">
+    <!-- Link com o CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function Mensagem() {
+            alert("Você será redirecionado para o seu servidor de email, caso não esteja logado no seu email, efetue o login e tente novamente")
+        }
+
+        function click_menu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function tamanho_site() {
+            if (window.innerWidth > 768) {
+                itens.style.display = 'flex'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+    </script>
+    <script src="https://kit.fontawesome.com/dd5adca37e.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body onresize="tamanho_site()">
+
+</body>
+<header>
+    <nav class="alinhamento">
+
+        <a class="link_logo" href="#">
+            <img class="logo" src="./img/Logo Branca.png" alt="O logotipo da">
+        </a>
+
+        <ul class="menu" id="itens">
+            <li><a href="#">Home</a></li>
+            <li><a href="#quem_somos">Quem Somos?</a></li>
+            <li><a href="#conheca_esg">Conheça a ESG</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <!-- Menu de hamubrguer -->
+        <i id="burguer" class="fa-solid fa-bars" onclick="click_menu()"></i>
+    </nav>
+</header>
+<main>
+
+    <h1>Página Inicio da Jeito</h1>
+
+    <section class="quem_somos alinhamento">
+        <img class="primeira_foto" src="./img/primeira imagem.jpg"
+            alt="A imagem mostra algumas roupas penduradas em cabides na natureza">
+
+        <div class="sobre alinhamento">
+            <p class="sobre_titulo">Olá, Somos a G&TO!</p>
+            <P class="sobre_texto">Uma casa de moda comprometida com o movimento ESG, focada em roupas no Estilo Natural
+                Esportivo para quem por roupas confortaveis e despojadas</P>
+            <button class="btn_esg">
+                <a href="#">Conheça a ESG</a>
+            </button>
+        </div>
+    </section>
+
+    <section class="data">
+        <p>Lançamento da <span>g&to</span></p>
+        <time datetime="2023-06-06">06/06/2023</time>
+
+    </section>
+
+    <!-- Imagens -->
+
+    <section class="imagens">
+        <div class="imgs">
+
+            <img class="primeira" src="./img/Menina 1.jpg" alt="A Imagem mostra uma mulher sentada em uma mesa, ela usa óculos escuros, uma camisa moderna com formas geométricas, calça jeans e bota branca. A modelo segura um buquê de flores amarelas">
+            <img class="segunda" src="./img/Menina 2.jpg" alt="A Imagem mostra duas amigas segurando bebidas geladas, está ensolarado, elas vestem camisetas brancas, shorts azuis e uma delas usa uma camisa azul xadrez amarrada na cintura">
+            <img class="terceira" src="./img/menina 3.jpg" alt="A Imagem mostra uma mulher usando uma camiseta preta escrita Forever or Never em texto branco, traduzido fica Para Sempre ou Nunca, por cima, a modelo utiliza uma camisa jeans escura. Ela tem uma expressão facial séria e poderosa">
+
+        </div>
+
+    </section>
+
+    <section class="esg alinhamento" id="conheca_esg">
+        <div class="sobre_esg">
+            <p class="sobre_esg_titulo">O Que é ESG?</p>
+            <p class="sobre_esg_texto">ESG é um conjunto de ideias e práticas que avaliam como as empresas cuidam do
+                meio ambiente, das pessoas que trabalham com elas e de como são administradas. Por exemplo, uma empresa
+                que usa materiais reciclavéis e se preocupa em ter um ambiente de trabalho saudável para os funcionários
+                tem uma boa nota em ESG. Isso é importante porque muitas pessoas estão preocupadas em apoiar empresas
+                que cuidam do mundo e das pessoas, não só em ganhar dinheiro.</p>
+        </div>
+        <img src="./img/sustentabilidade.jpg" alt="A Imagem mostra um homem na rua utilizando uma blusa de moletom branca com as letras J, M e G em texto preto. Além disso, o modelo utiliza calça preta, Boné e Tenis Branco.">
+    </section>
+
+    <section class="formulario">
+        <p class="formulario_titulo">Ficou com Alguma dúvida?</p>
+
+        <form method="" action="mailto:geto@gmail.com" enctype="text/plain">
+            <!-- Nome -->
+            <div>
+
+                <label for="name">Nome:</label>
+                <input class="borda" type="text" id="name" name="name">
+            </div>
+            <!-- Email -->
+            <div>
+                <label for="email">Email:</label>
+                <input class="borda" type="email" id="email" name="email">
+
+            </div>
+            <!-- Mensagem -->
+            <div>
+                <label for="message">Mensagem:</label>
+                <textarea class="borda" name="message" id="message" cols="40" rows="6"></textarea>
+
+            </div>
+
+            <button class="btn_forms" type="submit" onclick="Mensagem()">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Contato -->
+    <section class="contato alinhamento" id="contato">
+        <p class="contato_titulo">Contato</p>
+        <div class="contato_conteudo">
+            <div class="borda_mapa">
+                <iframe class="mapa" iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.698900349174!2d-46.57329922474687!3d-23.61512917876283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d3ee47e0155%3A0x33109d1a7d4fa277!2sEscola%20Senai%20Paulo%20Skaf!5e0!3m2!1spt-BR!2sbr!4v1683145272581!5m2!1spt-BR!2sbr"
+                    height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrFerpolicy="no-referrer-when-downgrade"></iframe>"
+                </iframe>
+            </div>
+            <div class="contato_info">
+                <div class="info">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>(99)99999-9999</p>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>contato@geto.com</p>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Rua Niterói, 180 - SCS</p>
+                </div>
+                <div class="info">
+                    <i class="fa-brands fa-instagram"></i>
+                    <p>@geto</p>
+                </div>
+                <div class="info">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <p>@geto</p>
+                </div>
+                <div class="info">
+                    <i class="fa-brands fa-facebook"></i>
+                    <p>@geto</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
+<footer>
+    <p>Todos os direitos reservados &#169; G&TO</p>
+
+</footer>
+
+</html>
